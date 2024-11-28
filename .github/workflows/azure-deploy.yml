@@ -9,6 +9,10 @@ on:
   pull_request:
   workflow_dispatch: #manual trigger
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   deploy-dev:
     runs-on: ubuntu-latest
